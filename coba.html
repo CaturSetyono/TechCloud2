@@ -6,32 +6,31 @@
     <title>Photo Catalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1 class="text-3xl text-center font-bold underline mb-8">Photo Catalog</h1>
-    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<body class="bg-gray-100">
+    <h1 class="text-3xl text-center font-bold underline my-8">Photo Catalog</h1>
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
         <!-- Photo Item Start -->
-        <div class="flex flex-col items-center">
-            <img src="https://unsplash.com/photos/a-man-in-a-hat-and-sunglasses-holding-a-cell-phone-A2NK_wWtNd8" alt="Photo 1" class="w-full rounded shadow-lg">
-            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+        <div class="flex flex-col items-center bg-white p-4 rounded shadow-lg">
+            <img src="https://picsum.photos/300/200?random=1" alt="Photo 1" class="w-full rounded-md">
+            <h2 class="text-xl font-semibold mt-4">Lorem Ipsum 1</h2>
             <button 
                 class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
                 onclick="toggleLike(this)">
                 Like
             </button>
         </div>
-        <!-- Repeat Photo Item for More Photos -->
-        <div class="flex flex-col items-center">
-            <img src="https://source.unsplash.com/random/301x201" alt="Photo 2" class="w-full rounded shadow-lg">
-            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+        <div class="flex flex-col items-center bg-white p-4 rounded shadow-lg">
+            <img src="https://picsum.photos/300/200?random=2" alt="Photo 2" class="w-full rounded-md">
+            <h2 class="text-xl font-semibold mt-4">Lorem Ipsum 2</h2>
             <button 
                 class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
                 onclick="toggleLike(this)">
                 Like
             </button>
         </div>
-        <div class="flex flex-col items-center">
-            <img src="https://source.unsplash.com/random/302x202" alt="Photo 3" class="w-full rounded shadow-lg">
-            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+        <div class="flex flex-col items-center bg-white p-4 rounded shadow-lg">
+            <img src="https://picsum.photos/300/200?random=3" alt="Photo 3" class="w-full rounded-md">
+            <h2 class="text-xl font-semibold mt-4">Lorem Ipsum 3</h2>
             <button 
                 class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
                 onclick="toggleLike(this)">
