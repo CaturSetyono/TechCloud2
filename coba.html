@@ -3,10 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo Catalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-3xl text-center font-bold underline"> Hallo Wolrd</h1>
+    <h1 class="text-3xl text-center font-bold underline mb-8">Photo Catalog</h1>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Photo Item Start -->
+        <div class="flex flex-col items-center">
+            <img src="https://unsplash.com/photos/a-man-in-a-hat-and-sunglasses-holding-a-cell-phone-A2NK_wWtNd8" alt="Photo 1" class="w-full rounded shadow-lg">
+            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+            <button 
+                class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
+                onclick="toggleLike(this)">
+                Like
+            </button>
+        </div>
+        <!-- Repeat Photo Item for More Photos -->
+        <div class="flex flex-col items-center">
+            <img src="https://source.unsplash.com/random/301x201" alt="Photo 2" class="w-full rounded shadow-lg">
+            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+            <button 
+                class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
+                onclick="toggleLike(this)">
+                Like
+            </button>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="https://source.unsplash.com/random/302x202" alt="Photo 3" class="w-full rounded shadow-lg">
+            <h2 class="text-xl font-semibold mt-4">Lorem</h2>
+            <button 
+                class="mt-2 bg-red-500 text-white px-4 py-2 rounded like-button" 
+                onclick="toggleLike(this)">
+                Like
+            </button>
+        </div>
+        <!-- Add more items if needed -->
+    </div>
+
+    <script>
+        function toggleLike(button) {
+            if (button.classList.contains('bg-red-500')) {
+                button.classList.remove('bg-red-500');
+                button.classList.add('bg-gray-500');
+                button.innerText = 'Unlike';
+                alert('Kamu suka');
+            } else {
+                button.classList.remove('bg-gray-500');
+                button.classList.add('bg-red-500');
+                button.innerText = 'Like';
+                alert('Kamu tidak suka');
+            }
+        }
+    </script>
 </body>
 </html>
